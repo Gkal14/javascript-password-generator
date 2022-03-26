@@ -1,4 +1,4 @@
-,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -12,7 +12,7 @@ body,
   padding: 0;
 }
 
-body {*
+body {
   font-family: sans-serif;
   background-color: #f9fbfd;
 }
