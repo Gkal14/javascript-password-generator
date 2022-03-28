@@ -81,13 +81,12 @@ else {
           pwdCriteria.passwordLength++;
           
       }  if (numbers===true && pwdCriteria.passwordLength<pwdlength){
-        var num=pwdCriteria.pwdNumeric[Math.floor(Math.random()*26)]
+        var num=pwdCriteria.pwdNumeric[Math.floor(Math.random()*10)]
         result=result+num;
-        console.log(result)
         pwdCriteria.passwordLength++;
 
     } if (characters===true && pwdCriteria.passwordLength<pwdlength){
-      var char=pwdCriteria.pwdCharacter[Math.floor(Math.random()*26)]
+      var char=pwdCriteria.pwdCharacter[Math.floor(Math.random()*31)]
       result=result+char;
       console.log(result)
       pwdCriteria.passwordLength++;
@@ -97,6 +96,7 @@ else {
 }
 }
 }
+return result;
 
 // function to follow criteria
 function varOptions () {
