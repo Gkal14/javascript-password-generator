@@ -27,3 +27,23 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+function generatePassword() {
+ var result=""; 
+
+ var pwdlength= 128;
+ var pwdLowerCase;
+ var pwdUpperCase;
+ var pwdNumeric;
+ var pwdCharacter;
+
+ pwdlength= 128;
+ pwdCriteria.pwdlength=128;
+ result="";
+
+
+if (pwdlength >8 && pwdlength<128) {
+  pwdlength=prompt("Your password must be between 8 and 128 characters long. How long do you want your secure password to be?")
+}
+}
+
