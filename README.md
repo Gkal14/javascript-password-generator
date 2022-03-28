@@ -12,4 +12,4 @@ Below you will find a screenshot and a link to the deployed application.
 
 ![application image](./Password%20Generator.png)
 
-Application link:
+Application link: https://gkal14.github.io/javascript-password-generator/
