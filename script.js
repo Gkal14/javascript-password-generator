@@ -37,8 +37,8 @@ function generatePassword() {
  var pwdNumeric;
  var pwdCharacter;
 
- pwdlength= 0;
- pwdCriteria.pwdlength=0;
+ passwordLength= 0;
+ pwdCriteria.passwordLength=0;
  result="";
 
 // checking for password criteria
@@ -54,15 +54,29 @@ else {
     return "Password Generator";
   }
   else {
-    if (pwdlength <8 && pwdlength>128) {
+    if (pwdlength <8 || pwdlength>128) {
       alert ("Your password must be between 8 and 128 characters long");
       return "Password Generator"
   }
   else {
-   
+    varOptions();
+   if (pwdCriteria.passwordLength<pwdlength){
+    if (lowerCase===false && upperCase===false && numbers===false && characters===false){
+       alert("YOUR PASSWORD MUST CONTAIN EITHER lower case letters, UPPER CASE LETTERS, NUMBERS OR SPECIAL CHARACTERS")
+      varOptions();    
+      } else return "Your Secure Password"
+    }
+   }
   }
 
 }
 }
 }
+
+// function to follow criteria
+function varOptions () {
+  lowerCase= confirm("Would you like to have lower case letters in your password?")
+  upperCase= confirm("Would you like to have upper case letters in your password?")
+  numbers= confirm("Would you like to have numbers in your password?")
+  characters= confirm("Would you like to have special characters in your password?")
 }
